@@ -30,7 +30,7 @@ const exams = [
 
 export default function ExamsSection() {
   return (
-    <section id="examens" className="py-16 lg:py-24 bg-white">
+    <section id="examens" className="py-16 lg:py-24 bg-surface">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <h2
@@ -48,8 +48,8 @@ export default function ExamsSection() {
           {exams.map((exam) => (
             <div
               key={exam.title}
-              className={`relative bg-white rounded-2xl p-6 flex flex-col transition-transform duration-200 hover:-translate-y-1 ${
-                exam.popular ? "border-2 scale-[1.02]" : "border border-gray-100"
+              className={`relative bg-surface rounded-2xl p-6 flex flex-col transition-transform duration-200 hover:-translate-y-1 ${
+                exam.popular ? "border-2 scale-[1.02]" : "border border-border"
               }`}
               style={exam.popular ? { borderColor: "var(--color-primary)" } : undefined}
             >

@@ -51,7 +51,7 @@ export default function BlogSection() {
           {posts.map((post) => (
             <article
               key={post.title}
-              className="bg-white border border-gray-100 rounded-2xl overflow-hidden hover:-translate-y-1 transition-transform duration-200"
+              className="bg-surface border border-border rounded-2xl overflow-hidden hover:-translate-y-1 transition-transform duration-200"
             >
               <div
                 className="w-full aspect-video flex items-center justify-center"

@@ -50,7 +50,7 @@ const plans = [
 
 export default function PricingSection() {
   return (
-    <section id="tarifs" className="py-16 lg:py-24 bg-white">
+    <section id="tarifs" className="py-16 lg:py-24 bg-surface">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <h2
@@ -71,7 +71,7 @@ export default function PricingSection() {
               className={`relative rounded-2xl p-6 flex flex-col ${
                 plan.highlighted
                   ? "border-2 scale-[1.02]"
-                  : "border border-gray-100 bg-white"
+                  : "border border-border bg-surface"
               }`}
               style={
                 plan.highlighted

@@ -59,7 +59,7 @@ export default function ResultsSection() {
           {testimonials.map((t) => (
             <div
               key={t.name}
-              className="bg-white border border-gray-100 rounded-2xl p-6 hover:-translate-y-1 transition-transform duration-200"
+              className="bg-surface border border-border rounded-2xl p-6 hover:-translate-y-1 transition-transform duration-200"
             >
               <div className="flex items-center gap-3 mb-4">
                 <div

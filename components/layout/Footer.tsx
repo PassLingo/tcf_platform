@@ -24,7 +24,7 @@ const footerLinks = {
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-t border-gray-100">
+    <footer className="bg-surface border-t border-border">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
@@ -46,13 +46,13 @@ export default function Footer() {
               La plateforme de référence pour préparer votre examen de français et réussir votre projet d&apos;immigration.
             </p>
             <div className="flex items-center gap-3">
-              <a href="#" aria-label="Facebook" className="p-2 rounded-lg hover:bg-gray-100 text-muted hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary">
+              <a href="#" aria-label="Facebook" className="p-2 rounded-lg hover:bg-bg text-muted hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary">
                 <Globe size={18} />
               </a>
-              <a href="#" aria-label="Instagram" className="p-2 rounded-lg hover:bg-gray-100 text-muted hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary">
+              <a href="#" aria-label="Instagram" className="p-2 rounded-lg hover:bg-bg text-muted hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary">
                 <Share2 size={18} />
               </a>
-              <a href="#" aria-label="WhatsApp" className="p-2 rounded-lg hover:bg-gray-100 text-muted hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary">
+              <a href="#" aria-label="WhatsApp" className="p-2 rounded-lg hover:bg-bg text-muted hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary">
                 <MessageCircle size={18} />
               </a>
             </div>
@@ -82,7 +82,7 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="mt-12 pt-6 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="mt-12 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted">
             © 2025 MonTCF. Tous droits réservés.
           </p>

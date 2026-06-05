@@ -8,11 +8,11 @@ export default function ContactSection() {
   const [form, setForm] = useState({ nom: "", email: "", message: "" });
 
   const inputClass =
-    "w-full border border-gray-200 rounded-xl p-3 text-sm text-[var(--color-text)] placeholder:text-[var(--color-muted)] focus:outline-none focus:border-[var(--color-primary)] focus:ring-2 transition-all";
+    "w-full border border-border rounded-xl p-3 text-sm text-[var(--color-text)] placeholder:text-[var(--color-muted)] focus:outline-none focus:border-[var(--color-primary)] focus:ring-2 transition-all";
   const focusRingStyle = { "--tw-ring-color": "rgba(79,60,201,0.2)" } as React.CSSProperties;
 
   return (
-    <section id="contact" className="py-16 lg:py-24 bg-white">
+    <section id="contact" className="py-16 lg:py-24 bg-surface">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-12">
           <div className="lg:col-span-5">
@@ -130,7 +130,7 @@ export default function ContactSection() {
           </p>
           <a
             href="#"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-medium transition-colors hover:bg-gray-100"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-medium transition-colors hover:bg-bg"
             style={{ backgroundColor: "white", color: "var(--color-primary)" }}
           >
             S&apos;inscrire gratuitement →

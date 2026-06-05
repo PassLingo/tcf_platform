@@ -12,7 +12,7 @@ export default function Badge({ children, variant = "primary", color, className 
     success:
       "bg-green-100 text-green-700",
     neutral:
-      "bg-gray-100 text-gray-600",
+      "bg-border text-gray-600",
     custom: "",
   };
 
