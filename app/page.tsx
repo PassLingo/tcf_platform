@@ -1,5 +1,3 @@
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
 import HeroSection from "@/components/sections/HeroSection";
 import WhyUsSection from "@/components/sections/WhyUsSection";
 import ExamsSection from "@/components/sections/ExamsSection";
@@ -10,7 +8,6 @@ import BlogSection from "@/components/sections/BlogSection";
 export default function Home() {
   return (
     <>
-      <Header />
       <main>
         <HeroSection />
         <WhyUsSection />
@@ -19,7 +16,6 @@ export default function Home() {
         <PricingSection />
         <BlogSection />
       </main>
-      <Footer />
     </>
   );
 }

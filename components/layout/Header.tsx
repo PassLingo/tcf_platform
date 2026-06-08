@@ -7,11 +7,10 @@ import ThemeToggle from "@/components/ui/ThemeToggle";
 import Link from "next/link";
 
 const navLinks = [
-  { label: "Accueil", href: "#accueil" },
-  { label: "Examens", href: "#examens" },
-  { label: "Tarifs", href: "#tarifs" },
+  { label: "Accueil", href: "/" },
+  { label: "TCF Canada", href: "/tcf-canada" },
   { label: "Blog", href: "/blog" },
-  { label: "Contact", href: "#contact" },
+  { label: "Tarifs", href: "/tarifs" },
 ];
 
 export default function Header() {
@@ -51,13 +50,13 @@ export default function Header() {
 
           <nav className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.label}
                 href={link.href}
                 className="text-sm text-muted hover:text-text transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -89,14 +88,14 @@ export default function Header() {
       {mobileOpen && (
         <div className="md:hidden bg-surface border-t border-border px-4 pt-4 pb-6 flex flex-col gap-4">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.label}
               href={link.href}
               className="text-sm text-text py-2 hover:text-primary transition-colors"
               onClick={() => setMobileOpen(false)}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
           <div className="flex flex-col gap-3 pt-2">
             <Button variant="outline" size="sm" className="w-full justify-center">
