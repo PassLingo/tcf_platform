@@ -1,9 +1,8 @@
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
 import BlogCard from "@/components/blog/BlogCard";
 import { blogPosts } from "@/lib/blog/posts";
+import {Metadata} from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Blog | MonTCF",
   description:
     "Conseils, guides et témoignages pour réussir votre TCF Canada et immigrer au Québec.",
@@ -12,7 +11,6 @@ export const metadata = {
 export default function BlogPage() {
   return (
     <>
-      <Header />
       <main>
         <section className="py-16 lg:py-24" style={{ backgroundColor: "var(--color-bg)" }}>
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -42,7 +40,6 @@ export default function BlogPage() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

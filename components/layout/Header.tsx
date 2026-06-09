@@ -80,12 +80,11 @@ export default function Header() {
 
           <div className="hidden md:flex items-center gap-3">
             <ThemeToggle />
-            <Button variant="outline" size="sm">
-              Se connecter
-            </Button>
-            <Button variant="primary" size="sm">
-              S&apos;inscrire →
-            </Button>
+            <Link href="/login">
+              <Button variant="primary" size="sm">
+                Connexion / Inscription
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile hamburger */}
@@ -114,8 +113,8 @@ export default function Header() {
                 onClick={() => setMobileOpen(false)}
                 className={`text-sm py-2 px-3 rounded-lg transition-all duration-200
                   ${active
-                    ? "text-[var(--color-primary)] font-semibold"
-                    : "text-text hover:text-[var(--color-primary)] hover:bg-[var(--color-primary-light)]"
+                    ? "text-primary font-semibold"
+                    : "text-text hover:text-primary hover:bg-primary-light"
                   }`}
               >
                 {link.label}
@@ -123,12 +122,11 @@ export default function Header() {
             );
           })}
           <div className="flex flex-col gap-3 pt-2">
-            <Button variant="outline" size="sm" className="w-full justify-center">
-              Se connecter
-            </Button>
-            <Button variant="primary" size="sm" className="w-full justify-center">
-              S&apos;inscrire →
-            </Button>
+            <Link href="/login" onClick={() => setMobileOpen(false)}>
+              <Button variant="primary" size="sm" className="w-full justify-center">
+                Connexion / Inscription
+              </Button>
+            </Link>
           </div>
         </div>
       )}
